@@ -46,9 +46,56 @@ const questions = [
   },
 ];
 
+inquirer.prompt(questions)
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+.then((data) => {
+const fileName = `${data.title.toTitleCase().split(" ").join("-")}.md`;
+const mdDoc = `
+# ${title}
 
+## Description
+
+${description}
+
+
+## Table of Contents
+
+
+## Installation
+
+${install}
+
+
+## Usage
+
+${usage}
+
+
+## License
+
+${license}
+
+
+## Contributing
+
+${contribute}
+
+
+## Tests
+
+${tests}
+
+
+## Questions
+
+${questions}
+`
+
+fs.writeFile(fileName, mdDoc, (err) =>
+err ? console.log(err) : console.log("Success!")
+)
+// function writeToFile(fileName, data) {}
+});
 // TODO: Create a function to initialize app
 function init() {}
 

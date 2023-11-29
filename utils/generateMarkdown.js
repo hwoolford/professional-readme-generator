@@ -29,6 +29,8 @@ function renderLicenseSection(license) {
   ## License
 
   ${license}`;
+  } else {
+    return ""
   }
 }
 
@@ -83,7 +85,7 @@ ${data.tests}
 ${data.questions}
 
 
-${renderLicenseSection(data.license)};
+${renderLicenseSection(data.license)}
 `;
 }
 

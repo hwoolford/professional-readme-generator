@@ -1,11 +1,11 @@
 
-# laskdjflijlasdf
+# asdfsdfsdfsdf
   
-![MIT License](https://img.shields.io/badge/License-MIT-blue)
+
 
 ## Description
 
-askljdflaskdjf
+asdfsdfsdfsdfsdf
   
   
 ## Table of Contents
@@ -15,37 +15,34 @@ askljdflaskdjf
   - [Contributing](#contributing)
   - [Tests](#tests)
   - [Questions](#questions)
-  - [License](#license)
+  
 
 
 ## Installation
   
-laksjdflaksjflaksdfj
+asl;djf;ladsfjl;asdkjf
   
   
 ## Usage
   
-laskdfjlaksjfkl
+lsjdf;lsjflksdjf
   
   
 ## Contributing
   
-lkasdlfkjsldfk
+;oiasjdf;lkjsd;lfkj
   
   
 ## Tests
   
-laksdflkasfl
+sdfasdfasdff
   
   
 ## Questions
   
-[Find me on GitHub](https://github.com/asdlfjk;sfk) | [Send me an email](asldfj;asdlfk)
+[Find me on GitHub](https://github.com/asdfsadff) | [Send me an email](asdfsdfdsf)
   
-;askdf;lskdf
+asdfsdff
 
 
 
-  ## License
-
-  MIT;

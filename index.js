@@ -3,7 +3,7 @@ const { writeFile } = require('fs').promises;
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown.js");
 
-
+// Prompts to build README generator
 const questions = () => {
     return inquirer.prompt([ 
   {
@@ -67,7 +67,7 @@ const questions = () => {
 ]);
 };
 
-
+// Initializes program by presenting the prompts and then writing the answers to the generated README.md file
 const init = () => {
     questions()
     .then((answers) => writeFile('./generated-readme/README.md', generateMarkdown(answers)))
@@ -75,5 +75,5 @@ const init = () => {
     .catch((err) => console.log(err));
 };
 
-
+// Function call to initialize app
 init();

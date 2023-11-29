@@ -2,13 +2,13 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license === "MIT") {
-    return `![MIT]("https://img.shields.io/badge/License-MIT-blue")`
+    return `![MIT]("https://img.shields.io/badge/License-MIT-blue")`;
   } else if (license === "GNU GPLv3") {
-    return `![GNU GPLv3]("https://img.shields.io/badge/License-GNU_GPLv3-blue")`
+    return `![GNU GPLv3]("https://img.shields.io/badge/License-GNU_GPLv3-blue")`;
   } else if (license === "Mozilla Public License 2.0") {
-    return `![Mozilla Public License 2.0]("https://img.shields.io/badge/License-Mozilla_Public_License_2.0-blue")`
+    return `![Mozilla Public License 2.0]("https://img.shields.io/badge/License-Mozilla_Public_License_2.0-blue")`;
   } else if (license === "Apache License 2.0") {
-    return `![Apache License 2.0]("https://img.shields.io/badge/License-Apache_License_2.0-blue")`
+    return `![Apache License 2.0]("https://img.shields.io/badge/License-Apache_License_2.0-blue")`;
   } else {
     return "";
   }
@@ -18,7 +18,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license !== "None") {
-    return '\n* [License](#license)';
+    return "\n* [License](#license)";
   } else {
     return "";
   }
@@ -29,13 +29,16 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license !== "None") {
     return `## License
-    ${data.license}`
+
+    ${license}`;
   }
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return`
+  # ${data.title}
+  
   ${renderLicenseBadge(data.license)}
 
   ## Description
@@ -75,10 +78,12 @@ function generateMarkdown(data) {
   
   ## Questions
   
-  [Find me on GitHub](https://github.com/${data.github}) | [Send me an email](${data.email})
+  [Find me on GitHub](https://github.com/${data.github}) | [Send me an email](${
+    data.email
+  })
   
   ${data.questions}
-  
+
 
   ${renderLicenseSection(data.license)};
 `;

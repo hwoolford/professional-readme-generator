@@ -41,6 +41,16 @@ const questions = [
   },
   {
     type: "input",
+    message: "What is your gitHub username?",
+    name: "github",
+  },
+  {
+    type: "input",
+    message: "What is your email address?",
+    name: "email",
+  },
+  {
+    type: "input",
     message: "How can someone reach out to you with questions?",
     name: "questions",
   },
@@ -87,6 +97,9 @@ ${tests}
 
 
 ## Questions
+
+[Find me on GitHub](https://github.com/${github})
+[Send me an email](${email})
 
 ${questions}
 `

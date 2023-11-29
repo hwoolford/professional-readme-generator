@@ -1,11 +1,13 @@
 # Professional README Generator
 
 ## Description
-Blah
+This project involves modifying skeleton JavaScript files to bring functionality to the app. The Professional README Generator is a command line application built using JavaScript, JSON, node.js, and Inquirer. 
+
+Once the app is initialized, users are presented with several prompts. After answering the prompts, a README file is generated using the answers provided. 
 
 
 ## Usage
-How to use with screenshots
+In order to use this application, you must have node.js installed on your machine. To initialize the Professional README Generator, type "node index.js" in the command line. Answer the prompts and then view your new README file. Make adjustments as needed.
 
 
 ## Installation

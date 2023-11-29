@@ -1,7 +1,7 @@
 
 const { writeFile } = require('fs').promises;
 const inquirer = require("inquirer");
-// const generateMarkdown = require("./utils/generateMarkdown.js");
+const generateMarkdown = require("./utils/generateMarkdown.js");
 
 
 const questions = () => {

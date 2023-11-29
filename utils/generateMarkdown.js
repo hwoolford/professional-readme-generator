@@ -2,9 +2,9 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license === "MIT") {
-    return `![MIT]("https://img.shields.io/badge/License-MIT-blue")`;
+    return `![MIT License]('https://img.shields.io/badge/License-MIT-blue')`;
   } else if (license === "GNU GPLv3") {
-    return `![GNU GPLv3]("https://img.shields.io/badge/License-GNU_GPLv3-blue")`;
+    return `![GNU GPLv3 License]("https://img.shields.io/badge/License-GNU_GPLv3-blue")`;
   } else if (license === "Mozilla Public License 2.0") {
     return `![Mozilla Public License 2.0]("https://img.shields.io/badge/License-Mozilla_Public_License_2.0-blue")`;
   } else if (license === "Apache License 2.0") {
@@ -18,7 +18,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license !== "None") {
-    return "\n* [License](#license)";
+    return "- [License](#license)";
   } else {
     return "";
   }
@@ -28,15 +28,16 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== "None") {
-    return `## License
+    return `
+  ## License
 
-    ${license}`;
+  ${license}`;
   }
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return`
+  return `
 # ${data.title}
   
 ${renderLicenseBadge(data.license)}
@@ -79,8 +80,8 @@ ${data.tests}
 ## Questions
   
 [Find me on GitHub](https://github.com/${data.github}) | [Send me an email](${
-  data.email
-})
+    data.email
+  })
   
 ${data.questions}
 

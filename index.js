@@ -27,7 +27,7 @@ const questions = [
     type: "list",
     message: "Please choose a license below.",
     name: "license",
-    choices: ['MIT', 'ISC', 'GNU GPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'The Unlicense'],
+    choices: ['MIT', 'GNU GPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'The Unlicense'],
   },
   {
     type: "input",
@@ -60,51 +60,8 @@ inquirer.prompt(questions)
 // TODO: Create a function to write README file
 .then((data) => {
 const fileName = `${data.title.toTitleCase().split(" ").join("-")}.md`;
-const mdDoc = `
-# ${title}
 
-## Description
-
-${description}
-
-
-## Table of Contents
-
-
-## Installation
-
-${install}
-
-
-## Usage
-
-${usage}
-
-
-## License
-
-${license}
-
-
-## Contributing
-
-${contribute}
-
-
-## Tests
-
-${tests}
-
-
-## Questions
-
-[Find me on GitHub](https://github.com/${github})
-[Send me an email](${email})
-
-${questions}
-`
-
-fs.writeFile(fileName, mdDoc, (err) =>
+fs.writeFile(fileName, data, (err) =>
 err ? console.log(err) : console.log("Success!")
 )
 // function writeToFile(fileName, data) {}

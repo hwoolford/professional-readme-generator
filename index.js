@@ -27,7 +27,7 @@ const questions = [
     type: "list",
     message: "Please choose a license below.",
     name: "license",
-    choices: ['MIT', 'GNU GPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'The Unlicense'],
+    choices: ['MIT', 'GNU GPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'Not Applicable'],
   },
   {
     type: "input",
@@ -62,8 +62,7 @@ inquirer.prompt(questions)
 const fileName = `${data.title.toTitleCase().split(" ").join("-")}.md`;
 
 fs.writeFile(fileName, data, (err) =>
-err ? console.log(err) : console.log("Success!")
-)
+err ? console.log(err) : console.log("Success!"))
 // function writeToFile(fileName, data) {}
 });
 // TODO: Create a function to initialize app

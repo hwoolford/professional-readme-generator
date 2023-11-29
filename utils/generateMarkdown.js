@@ -1,3 +1,11 @@
+// MIT = ![Static Badge](https://img.shields.io/badge/License-MIT-blue)
+
+// GNU GPLv3 = ![Static Badge](https://img.shields.io/badge/License-GNU_GPLv3-blue)
+
+// Mozilla Public License 2.0 = ![Static Badge](https://img.shields.io/badge/License-Mozilla_Public_License_2.0-blue)
+
+// Apache License 2.0 = ![Static Badge](https://img.shields.io/badge/License-Apache_License_2.0-blue)
+
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {}

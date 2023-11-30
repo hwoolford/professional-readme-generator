@@ -7,7 +7,9 @@ Once the app is initialized, users are presented with several prompts. After ans
 
 
 ## Usage
-In order to use this application, you must have node.js installed on your machine. To initialize the Professional README Generator, type "node index.js" in the command line. Answer the prompts and then view your new README file. Make adjustments as needed.
+In order to use this application, you must have node.js installed on your machine. You will also need a package.json with the required dependencies. Before installing dependencies, run "npm init" to create a package.json file. Also before installing npm dependencies, make sure you have a .gitignore file that includes node_modules/ and .DS_Store/. After running npm init, then run "npm i inquirer@8.2.4" to install inquirer. Inquirer is what allows you to execute the prompts.
+
+To initialize the Professional README Generator, type "node index.js" in the command line. Answer the prompts and then view your new README file. Make adjustments as needed.
 
 
 ## Installation

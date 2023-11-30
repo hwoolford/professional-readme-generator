@@ -1,4 +1,3 @@
-
 const { writeFile } = require('fs').promises;
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown.js");
@@ -46,12 +45,12 @@ const questions = () => {
   {
     type: "input",
     message:
-      "Describe the tests you have run and provide examples on how to run them.",
+      "Describe the tests you have run and provide examples of how to run them.",
     name: "tests",
   },
   {
     type: "input",
-    message: "What is your gitHub username?",
+    message: "What is your GitHub username?",
     name: "github",
   },
   {

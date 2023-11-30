@@ -25,7 +25,7 @@ The image below shows an example README that was generated using the Professiona
 
 ## Links
 - [GitHub Repository](https://github.com/hwoolford/professional-readme-generator) 
-- [Video Overview](https://drive.google.com/file/d/12aQ34LhcWG4ekgFcNFW6GhrvZX8wZ3Lu/view?usp=drive_link)
+- [Walkthrough Video Demonstration](https://drive.google.com/file/d/12aQ34LhcWG4ekgFcNFW6GhrvZX8wZ3Lu/view?usp=drive_link)
 
 ## Acknowledgements
 License badges created using [Shields.io](https://shields.io/badges/static-badge)

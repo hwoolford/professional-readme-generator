@@ -11,6 +11,9 @@ In order to use this application, you must have node.js installed on your machin
 
 To initialize the Professional README Generator, type "node index.js" in the command line. Answer the prompts and then view your new README file. Make adjustments as needed.
 
+The image below shows an example README that was generated using the Professional README Generator.
+
+![Generated README Example](./images/generated-readme.png)
 
 ## Installation
 1. Clone the repository to your machine

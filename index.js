@@ -30,9 +30,9 @@ const questions = () => {
     message: "Please choose a license below.",
     name: "license",
     choices: [
-      "MIT",
       "GNU GPLv3",
       "Mozilla Public License 2.0",
+      "MIT",
       "Apache License 2.0",
       "None",
     ],
